@@ -21,10 +21,14 @@ Again (as last week), open the file `R/exercise.R` in your favorite text editor.
 
 This week we will add more plots to the corpus visualisation from last week. The file `R/exercise.R` contains code to extract data from the corpus, and store it all in a data.frame. Please examine the code to make sure you understand what's in each column.
 
-- a) Generate a bar plot that shows the number of tokens per document.
-- b) Generate a bar plot that shows the amount of color words in each document as a stacked bar chart (for the colors red, green, blue). You will need to tweak the data input a little bit. Please remove documents that do not have any color word. Obviously, it would be cool to color the areas in the appropriate color.
-- c) The function `dist()` can be used to compute Euclidean and other distances between rows in a table. Please calculate the Manhattan-distance between the documents in the corpus and visualise their similarity in a heatmap.
-- d) It's often useful to visualise a diachronic development as well as a distribution simultaneously. Please generate a plot that shows the number of sentences per document as a bar chart. Next to the bar chart, you should show a box plot that shows the distribution. Make it so that the bar chart is 5 times wider than the box plot.
+- a) Generate a bar plot that shows the number of tokens per document. ![](a.png)
+
+- b) Generate a bar plot that shows the amount of color words in each document as a stacked bar chart (for the colors red, green, blue). You will need to tweak the data input a little bit. Please remove documents that do not have any color word. Obviously, it would be cool to color the areas in the appropriate color. ![](b.png)
+
+
+- c) The function `dist()` can be used to compute Euclidean and other distances between rows in a table. Please calculate the Manhattan-distance between the documents in the corpus and visualise their similarity in a heatmap. ![](c.png)
+
+- d) It's often useful to visualise a diachronic development as well as a distribution simultaneously. Please generate a plot that shows the number of sentences per document as a bar chart. Next to the bar chart, you should show a box plot that shows the distribution. Make it so that the bar chart is 5 times wider than the box plot. ![Possible solution to d](d.png)
 - e) If you look closely, you notice that the axes in the plots in d are not aligned. Can you adapt the plot so that they are?
 
 ## Step 4
