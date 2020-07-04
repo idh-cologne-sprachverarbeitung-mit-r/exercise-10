@@ -1,4 +1,4 @@
-# Exercise 9
+# Exercise 10
 
 **In General**: Please ask questions in the [ilias-Forum](https://www.ilias.uni-koeln.de/ilias/goto_uk_frm_3270419.html) for this course, so that others can also see the question and answer*.
 
@@ -29,6 +29,7 @@ This week we will add more plots to the corpus visualisation from last week. The
 - c) The function `dist()` can be used to compute Euclidean and other distances between rows in a table. Please calculate the Manhattan-distance between the documents in the corpus and visualise their similarity in a heatmap. ![](c.png)
 
 - d) It's often useful to visualise a diachronic development as well as a distribution simultaneously. Please generate a plot that shows the number of sentences per document as a bar chart. Next to the bar chart, you should show a box plot that shows the distribution. Make it so that the bar chart is 5 times wider than the box plot. ![Possible solution to d](d.png)
+
 - e) If you look closely, you notice that the axes in the plots in d are not aligned. Can you adapt the plot so that they are?
 
 ## Step 4
