@@ -26,3 +26,54 @@ df <- data.frame(
   blue=unlist(lapply(corpus, wc, p="\\b(blue)\\b"))
 )
 
+
+setwd("C:\\Users\\Lukas\\exercise-10")
+
+
+#a)
+
+barplot(df$tokens)
+
+
+#b)
+
+greensBool <- df$green > 0
+bluesBool <- df$blue > 0
+redsBool <- df$red > 0
+
+greensNum <- df$green[greensBool]
+bluesNum <- df$blue[bluesBool]
+redsNum <- df$red[redsBool]
+
+allColors <- rbind(greensNum, bluesNum, redsNum)
+
+barplot(
+  allColors,
+  col=c("green", "red", "blue")
+  )
+
+#c)
+
+heatmap(
+  as.matrix(dist(df, "manhattan")),
+  Colv = NA,
+  Rowv = NA)
+
+#d)
+
+layout(
+  matrix(c(1,2), nrow = 1, ncol = 2),
+  widths = c(5, 1)
+)
+barplot(df$sentences, xlab="Documents", ylab="Sentences")
+boxplot(df$sentences, frame = FALSE)
+
+#e)
+
+layout(
+  matrix(c(1,2), nrow = 1, ncol = 2),
+  widths = c(5, 1)
+)
+barplot(df$sentences, ylim=c(0, 1750),  xlab="Documents", ylab="Sentences")
+boxplot(df$sentences, ylim=c(0, 1750),  frame = FALSE)
+
