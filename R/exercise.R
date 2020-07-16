@@ -26,3 +26,18 @@ df <- data.frame(
   blue=unlist(lapply(corpus, wc, p="\\b(blue)\\b"))
 )
 
+# a)
+barplot(df$tokens)
+
+# b) 
+barplot(t(as.matrix(df[rowSums(df[,8:10])>0,8:10])), col=c("green","red","blue"))
+
+
+# c)
+heatmap(as.matrix(dist(df)), Rowv=NA,  Colv=NA)
+
+# d) 
+layout(matrix(c(1,1,1,1,1,2),ncol=6))
+barplot(df$sentences, xlab="Documents",ylab="Sentences",las=1)
+boxplot(df$sentences,frame=FALSE)
+
